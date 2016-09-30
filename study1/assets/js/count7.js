@@ -2,11 +2,15 @@
 $(function(){
 
  $(".container__btn").mouseover(function(){
-     $(this).css("opacity","0.5");
+     $(this).stop().css("opacity","0.5");
  })
 
+$(".container__btn").mouseout(function(){
+    $(this).stop().css("opacity","1");
+})
+
  var count    = 0;
- var maxCount = 10;
+ var maxCount = 100;
 
  function countUp(){
    if( count < maxCount){
