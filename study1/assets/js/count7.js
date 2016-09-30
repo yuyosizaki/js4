@@ -2,15 +2,10 @@
 $(function(){
 
  $(".container__btn").mouseover(function(){
-     $(".increment").css("opacity","0.5");
+     $(this).css("opacity","0.5");
  })
 
- $(".container__btn").mouseover(function(){
-     $(".decrement").css("opacity","0.5");
- })
-
-
- var count = 0;
+ var count    = 0;
  var maxCount = 10;
 
  function countUp(){
@@ -40,6 +35,5 @@ $(function(){
         $(".break").text("これ以上は減りません");
      }
  })
-
 
 })//end function
